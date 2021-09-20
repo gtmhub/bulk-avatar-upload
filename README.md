@@ -2,12 +2,8 @@
 Utility to upload avatars in bulk
 
 ## Requirements
-# Software
-Python v3.x.x+  
-R tbc
-
-# Licenses / Accounts
-tbc
+### Software
+Python v3.x.x+
 
 ## Usage
 **1. CONFIGURATION**  
