@@ -2,10 +2,10 @@
 Utility to automatically upload avatars in bulk
 
 ### Usage
-1. Enter details for the account & path to where the profile images are that you want to upload.
-ACCOUNT ID - This is the Gtmhub account id which can be found in the account settings.
-AUTH_TOKEN - This is the Gtmhub auth token which can be found in the account settings.
-PATH_TO_IMAGE_FOLDER - This is the path where all profile images to be checked against the account for upload are stored.
+1. Enter details for the account & path to where the profile images are that you want to upload.  
+ACCOUNT ID - This is the Gtmhub account id which can be found in the account settings.  
+AUTH_TOKEN - This is the Gtmhub auth token which can be found in the account settings.  
+PATH_TO_IMAGE_FOLDER - This is the path where all profile images to be checked against the account for upload are stored.  
 
 2. Run the script. There are print lines for debugging commented out, e.g. the response code (line 40) you receive when attempting to update the profile image.
 
