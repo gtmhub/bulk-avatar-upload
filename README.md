@@ -1,7 +1,15 @@
 # bulk-avatar-upload
 Utility to upload avatars in bulk
 
-### Usage
+## Requirements
+# Software
+Python v3.x.x+
+R <tbc>
+
+# Licenses / Accounts
+<tbc>
+
+## Usage
 **1. CONFIGURATION**  
  Enter authentication details for the account & path to where the profile images are that you want to upload.  
  
