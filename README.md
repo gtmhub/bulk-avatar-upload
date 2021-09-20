@@ -14,8 +14,10 @@ Utility to upload avatars in bulk
 The script compares the name of the image file (e.g. "alice.smith@example.org") to the current list of Gtmhub users that it gets via an API call. If this matches, it will attempt to update the profile image using an API call.
 
 **Skip to step 3 if:** Your full **user email addresses** in Gtmhub all **match exactly the filenames** in the image folder ready for upload (e.g. user email and the image file name is *exactly* firstname.lastname@example.org - not including the file extension)  
+Image filename matches Gtmhub user email:  
+![Alt text](/alice.smith.PNG "Filename")![Alt text](/asg.png "Gtmhub user email")
 
-If your user email addresses in Gtmhub contain a mix of different domains, e.g. "alice.smith@example.onmicrosoft.com" and "bob.smith@example.org", a small alteration is needed on file 64, where we declare the text we use to match the two files up.
+If your user email addresses in Gtmhub contain a mix of different domains, e.g. "alice.smith@example.onmicrosoft.com" and "bob.smith@example.org", a small alteration in how the files are compared before upload is necessary (line 64, where we declare the text we use to match the two files up).
 
 Using Python's *replace* function, we can remove differing text from after the "@" sign from the Gtmhub user email.
 As above, I have users in Gtmhub with 2 varying domain extensions. "@example.onmicrosoft.com", and "@example.org".
