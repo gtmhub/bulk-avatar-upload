@@ -1,5 +1,5 @@
 # bulk-avatar-upload
-Python utility to automatically upload avatars in bulk
+Utility to upload avatars in bulk
 
 ### Usage
 1. Enter authentication details for the account & path to where the profile images are that you want to upload.  
