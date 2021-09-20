@@ -17,7 +17,7 @@ The script compares the name of the image file (e.g. "alice.smith@example.org") 
 **Skip to step 3 if:** Your full **user email addresses** in Gtmhub all **match exactly the filenames** in the image folder ready for upload (e.g. user email and the image file name is *exactly* firstname.lastname@example.org - not including the file extension)  
 
 Image filename matches Gtmhub user email.  
-![Alt text](/alice.smith.PNG "Filename")![Alt text](/asg.png "Gtmhub user email")  
+![Alt text](/img/alice.smith.PNG "Filename")![Alt text](/img/asg.png "Gtmhub user email")  
 If this is the case for all filenames, they are ready for upload.
 
 *Rare case:* If your user email addresses in Gtmhub contain a mix of different domains, e.g. "alice.smith@example.onmicrosoft.com" and "bob.smith@example.onmicrosoft.com", a small alteration in how the files are compared before upload is necessary (line 64, where we declare the text we use to match the two files up).
@@ -31,7 +31,7 @@ to
 <code>email_starts_with_text = user['email'].replace('example.onmicrosoft.com','').replace('example.org','')</code>  
 
 This would result in the text coming from the user list as "alice.smith" and "bob.smith" which is then compared to the starting text of the image file, allowing edge cases like the below not to affect the bulk upload of users.  
-![Alt text](/bob.smith.PNG "Filename")![Alt text](/bsg.PNG "Gtmhub user email")  
+![Alt text](/img/bob.smith.PNG "Filename")![Alt text](/img/bsg.PNG "Gtmhub user email")  
 Above, we see that the upload script will compare "bob.smith" from the user list, match the beginning of the image file "bob.smith@example.org", and upload the image correctly.
 
 **3. RUN THE SCRIPT**  
