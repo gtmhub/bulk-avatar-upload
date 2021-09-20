@@ -3,17 +3,25 @@ Utility to upload avatars in bulk
 
 ## Requirements
 ### Software
-Python v3.x.x+
+Python v3.x.x+  
+### Misc
+Profile pictures  
+Administrative permissions on gtmhub.com  
 
 ## Usage
 **1. CONFIGURATION**  
  Enter authentication details for the account & path to where the profile images are that you want to upload.  
  
-*ACCOUNT ID* - This is the Gtmhub account id which can be found at "Settings -> Api Tokens".  
-*AUTH_TOKEN* - This is the Gtmhub auth token which can be found at "Settings -> Api Tokens". Please ensure this token has rights for updateing profile images.  
-*PATH_TO_IMAGE_FOLDER* - This is the path where all profile images to be checked against the account for upload are stored in the system running the script.  
+*ACCOUNT ID:*  
+This is the Gtmhub account id which can be found at "Settings -> Api Tokens".  
+*AUTH_TOKEN:*  
+This is the Gtmhub auth token which can be found at "Settings -> Api Tokens". Please ensure this token has rights for updateing profile images.  
+*PATH_TO_IMAGE_FOLDER:*  
+This is the path where all profile images to be checked against the account for upload are stored in the system running the script.  
   *e.g.   Windows:* C:\Users\<user>\Pictures\bulk-upload\\\
-         *GNU/Linux, Unix:** /usr/share/images/bulk-upload/
+         *GNU/Linux, Unix:* /usr/share/images/bulk-upload/  
+
+If the Python [Requests](https://docs.python-requests.org/en/latest/) module is not already installed on the system, run command <code>pip install requests</code> from the command line/terminal.
 
 **2. PAIRING IMAGE NAMES TO EMAILS**  
 The script compares the name of the image file (e.g. "alice.smith@example.org") to the current list of Gtmhub users that it retreives via an API call. If this matches, it will attempt to update the profile image using a further API call.
