@@ -32,7 +32,7 @@ Image filename matches Gtmhub user email.
 ![Alt text](/img/alice.smith.PNG "Filename")![Alt text](/img/asg.png "Gtmhub user email")  
 If this is the case for all filenames, they are ready for upload.
 
-*Rare case:* If your user email addresses in Gtmhub contain a mix of different domains, e.g. "alice.smith@example.org" and "bob.smith@example.onmicrosoft.com", a small alteration in how the files are compared before upload is necessary (line 64, where we declare the text we use to match the two files up).
+*Rare case script user may encounter:* If your user email addresses in Gtmhub contain a mix of different domains, e.g. "alice.smith@example.org" and "bob.smith@example.onmicrosoft.com", a small alteration in how the files are compared before upload is necessary (line 64, where we declare the text we use to match the two files up).
 
 Using Python's [replace](https://docs.python.org/3/library/stdtypes.html) function, we can remove differing text from after the "@" sign from the Gtmhub user email.
 As above, I have users in Gtmhub with 2 varying domain extensions. "@example.onmicrosoft.com", and "@example.org".
