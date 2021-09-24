@@ -5,7 +5,7 @@ Utility to upload avatars in bulk
 ### Software
 Python v3.x.x+  
 ### Misc
-Profile pictures  
+Profile picture files
 Administrative permissions on gtmhub.com  
 
 ## Usage
