@@ -1,5 +1,5 @@
 # bulk-avatar-upload
-Utility to upload avatars in bulk
+Utility to upload avatars to your Gtmhub account in bulk.
 
 ## Requirements
 ### Software
