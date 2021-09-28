@@ -48,3 +48,7 @@ Above, we see that the upload script will compare "bob.smith" from the user list
 
 **3. RUN THE SCRIPT**  
 The script will alert the user to any issues when a match is found and an upload is not successful. The error text will be printed to the console for further debugging.
+
+## API endpoints utilised
+/api/v1/accounts/users - https://app.gtmhub.com/api/v1/docs/#/users/getAccountUsers  
+/api/v1/fileserver/avatar/{userId} - https://app.gtmhub.com/api/v1/docs/?urls.primaryName=fileserver#/fileserver/uploadAvatarImageForUser
